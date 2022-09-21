@@ -1,0 +1,239 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(assets/si.jpg);
+}
+
+#sidebar {
+    display: none;
+}
+
+.menu {
+    display: none;
+}
+
+#navbar {
+    width: 100%;
+    background-color: yellowgreen;
+    box-shadow: 0px 0px 15px black;
+}
+
+#navbar .container {
+    display: flex;
+}
+
+#navbar ul {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    list-style: none;
+    margin-top: 10px;
+}
+
+ul li a {
+    margin: 10px;
+    text-decoration: none;
+    color: blueviolet;
+    font-size: 17px;
+    font-family: Arial;
+}
+
+ul li a:hover {
+    color: cornsilk;
+    transition: 0.5s;
+}
+
+#navbar h1 {
+    width: 100%;
+    font-family: Arial;
+}
+
+b {
+    color: darkgoldenrod;
+}
+
+#home h1 {
+    color: azure;
+}
+
+#home b {
+    background-color: blanchedalmond;
+    padding: 10px;
+    border-radius: 100px;
+
+}
+
+.image {
+    background-image: url("assets/programm-modified.png");
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 250px;
+    background-size: cover;
+    margin: 20px;
+    opacity: 0;
+    animation: forwards foto 1.5s;
+}
+
+@keyframes foto {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#home {
+    height: 100vh;
+}
+
+#home .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#home h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#home .word {
+    background-color: chartreuse;
+    width: 70%;
+    margin: 50px auto;
+    padding: 20px;
+    font-size: 17px;
+}
+
+#projects {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+
+#projects .col {
+    box-shadow: 0px 0px 10px black;
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+}
+
+#projects .col:hover {
+    box-shadow: 0px 0px 10px white;
+    transition: all 0.5s linear;
+}
+
+#projects .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#projects .row a {
+    color: beige;
+    text-decoration: none;
+    text-align: center;
+}
+
+#projects h1 {
+    background-color: blanchedalmond;
+    padding: 5px;
+    border-radius: 10px;
+}
+#projects #adit{
+    background-image: url("assets/webAdit.png");
+    background-size: cover;
+}
+#projects #cakra{
+    background-image: url("assets/web\ cakra.png");
+    background-size: cover;
+}
+#projects #angga{
+    background-image: url("assets/webAngga.png");
+    background-size: cover;
+}
+
+#about {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+
+#about table {
+    margin: 10px;
+    color: white;
+}
+
+#about table:hover {
+    box-shadow: 0px 0px 20px orange;
+    transition: 0.5s;
+}
+
+#about h1 {
+    background-color: blanchedalmond;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contact h1 {
+    background-color: blanchedalmond;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 39px;
+}
+
+form {
+    background-color: blue;
+    width: 350px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contact form input {
+    width: 200px;
+}
+
+#contact form textarea {
+    width: 200px;
+}
+
+footer .container {
+    display: flex;
+}
+
+footer .card {
+    margin: 10px;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    background-color: azure;
+    margin-top: 100px;
+}

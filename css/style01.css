@@ -1,0 +1,110 @@
+body {
+font-family: "Times New Rosman";
+margin:0px;
+background-color: #B1D7B4;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#home h1 {
+      color: #2C3639;
+
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+/* navbar start */
+#navbar {
+display: flex;
+background-color: #7FBCD2;
+width: 100%;
+}
+
+#navbar .container {
+    display: flex;
+    width: 100%;
+
+}
+
+#navbar ul {
+    padding-top: 15px;
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: end;
+}
+
+#navbar ul li a {
+    margin: 10px;
+    text-decoration: none;
+}
+
+#navbar ul li {
+    display: flex;
+    font-weight: bold;
+    text-align: center;
+}
+
+#navbar h1 {
+    width: 100%;
+    color:#FCF8E8 ;
+}
+
+#light {
+    display: none;
+}
+
+.menu {
+    display: none;
+}
+
+#sidebar {
+    display: none;
+}
+
+#home .image {
+    background-image: url("assets/profile.jpg");
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    margin: auto;
+}
+
+#home {
+    height: 100vh;
+}
+
+#home .container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#projects {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color: #2C3639;
+}
+
+#projects .col {
+    width: 400px;
+    height: 200px;
+    background-color:#7FB77E ;
+}
+
+#about {
+text-align: center;
+color:#2C3639;
+}
+
+#contact {
+    text-align: center;
+    color:#2C3639 ;
+}

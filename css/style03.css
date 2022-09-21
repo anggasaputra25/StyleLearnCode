@@ -1,0 +1,456 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;    
+    font-family: monospace;
+    
+}
+*::selection{
+   color: rgb(241, 0, 32);
+    background-color: black;
+}
+body{   
+    background-color: rgb(21, 21, 21);
+    animation:forwards body 2.5s;
+ 
+}
+@keyframes body {
+    from{
+        background-color: rgb(100, 0, 0);
+    }
+    to{
+        background-color: black;
+    }
+    
+}
+
+/* Navbar Start */
+#navbar{
+    position:fixed;
+    z-index: 1;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    background-color:rgb(0, 0, 0);
+}
+#navbar .container{
+    align-items: center;
+    display: flex;
+    width: 100%;    
+
+}
+#navbar h1{
+    margin-left: 10px;
+    color: white;
+    display: flex;
+}
+#navbar b{
+    color: red;
+    padding: 2px;
+    border-radius: 80px;
+    font-weight: 800;
+}
+#navbar .container ul{
+    margin-top: 2px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    list-style: none;
+}
+/* #navbar .container ul:hover li a{
+    opacity: 1;
+} */
+#navbar .container ul li a{
+    /* opacity: 0; */
+    text-decoration: none;
+    font-size: 20px;
+    padding: 6px;
+    transition: 1s;
+    font-weight: 800;
+    color: white;
+    border: 1px solid black;
+    margin: 5px;
+    border-radius: 5px;
+}
+#navbar ul li a:hover{
+    box-shadow: inset 100px 0 0 0 rgb(241, 0, 32);
+    color: rgb(241, 0, 32); 
+    color: black;
+   
+}
+/* Navbar End */
+#sidebar{
+    display: none;
+}
+#light{
+    display: none;
+}
+#navbar .menu{
+    display: none;
+}
+/* Home Start */
+#home {
+    padding-top: 100px;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+#home h1{
+    opacity: 0;
+    font-size: 30px;
+    color: white;
+    margin-left: 1700px;
+    padding: 10px;
+    animation: forwards h1 1s;
+    animation-delay: 0.5s;
+}
+#home b{
+    background-color: rgb(241, 0, 32);
+    color: black;
+    padding: 2px;
+    border-radius: 10px;
+    font-weight: 800;
+}
+#home .image{
+    background-image: url(assets/profile.jpg);
+    background-size: cover;
+    border: 1px solid transparent;
+    margin-right: 1800px;
+    border-radius: 50%;
+    width: 300px;
+    height:300px;
+    animation: forwards foto 1s;
+    animation-delay: 1s;
+   
+   
+}
+@keyframes h1 {
+    from{
+        opacity: 0;
+        margin-left: 1800px;
+    }
+    to{
+        opacity: 1;
+        margin-left: 0;
+    }
+}
+@keyframes foto {
+    from{
+        margin-right: 1800px;
+    }
+    to{
+        margin-right: 0;
+        filter: drop-shadow(1px 1px 20px red);
+    }
+}
+#home .container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#home .word{
+    font-size: 15px;
+    margin-top: 800px;
+    padding: 10px;
+    width: 700px;
+    background-color:#0c002c;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    animation: forwards word 1s;
+    animation-delay: 1.5s;
+    border: 1px solid red;
+
+}
+@keyframes word {
+    from{
+        margin-top: 800px;
+   
+    }
+    to{
+        margin-top: 0;
+      
+    }
+}
+@keyframes rgb {
+    0%{
+        box-shadow: 0px 0px 20px red;
+    }
+    20%{
+        box-shadow: 0px 0px 20px yellow;
+    }
+    40%{
+        box-shadow: 0px 0px 20px rgb(0, 255, 0);
+    }
+    60%{
+        box-shadow: 0px 0px 20px rgb(0, 140, 255);
+    }
+    80%{
+        box-shadow: 0px 0px 20px rgb(140, 0, 255);
+    }
+    100%{
+        box-shadow: 0px 0px 20px red;
+    }
+    
+}
+/* #home .word:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    text-shadow: 0px 0px 10px red;
+    box-shadow: 0px 0px 20px red;
+    background-color: transparent;
+} */
+/* Home end */
+/* Projetc Start */
+#projects{
+    width: 100%;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#projects h1{
+    text-shadow: 1px 1px 10px rgb(241, 0, 32);
+    color: black;
+    color: rgb(241, 0, 32);
+    border-radius: 10px;
+    padding: 5px;
+    font-weight: 800;
+    animation:forwards row 2s;
+    animation-delay: 0.5s;
+    opacity: 0;
+    transition: 1s;
+}
+#projects hr{
+    display: none;
+}
+#projects:hover .row{
+    opacity: 1;
+    transform: scale(1.0);
+}
+#projects:hover h1{
+    text-shadow: 1px 1px 10px rgb(241, 0, 32);
+    color: black;
+    background-color: rgb(241, 0, 32);
+    border-radius: 10px;
+}
+#projects .row{
+    color: black;
+    text-decoration: none;
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 1s;
+    transform: scale(0.1);
+}
+@keyframes row {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+#projects .row a{
+    color: white;
+    text-align: center;
+    border: 2px solid rgb(241, 0, 32);
+    border-radius: 5px;
+    margin: 15px;
+    width: 400px;
+    height: 200px;
+    transition: 0.5s
+}
+#projects .row a:hover{
+    border: 2px solid white;
+    box-shadow: 0px 0px 20px rgb(241, 0, 32);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#projects .row a:active{
+    transform: scale(0.8);
+    cursor: pointer;
+}
+#projects  #cakra {
+    background-image: url(assets/web\ cakra.png);
+    background-size: cover;
+    width: 400px;
+    height: 200px;
+}
+#projects #angga {
+    background-image: url(assets/webAngga.png);
+    background-size: cover;
+    width: 400px;
+    height: 200px;
+}
+#projects #adit {
+    background-image: url(assets/webAdit.png);
+    background-size: cover;
+    width: 400px;
+    height: 200px;
+}
+
+
+/* Projecrs end */
+/* About Start */
+#about{
+    margin-top: 160px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+hr{
+    display: none;
+}
+#about h1{
+    text-align: center;
+    color: black;
+    background-color: rgb(241, 0, 32);
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* #about h1::before{
+    content: url(assets/about.png);
+    width: 60px;
+    height: 60px;
+} */
+#about table{
+    font-size: 20px;
+    color: white;
+    margin: 10px;
+   height: 100px;
+   transition: 0.5s;
+}
+#about table:hover{
+    border: 1px solid rgb(241, 0, 32);
+    
+}
+#about table .head{
+    background-color:rgb(241, 0, 32);
+    text-align: center;
+    color: black;
+}
+/* About End */
+/* Contact Start */
+#contact{
+    margin-top: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#contact h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: rgb(241, 0, 32);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+  
+}
+/* #contact h1::before{
+    content: url(assets/contact.png);
+} */
+#contact form{
+    color: rgb(241, 0, 32);
+    padding: 10px;
+    border-radius: 10px;
+    background-color:black;
+    width: 500px;
+    font-weight: 900;
+    font-size: 20px;
+    border: 1px solid rgb(241, 0, 32);
+}
+#contact form textarea{
+    width: 470px;
+    margin-left: 10px;
+    border: 2px solid  rgb(241, 0, 32) ;
+ 
+}
+#contact form input{
+    background-color: #fff;
+    margin: 5px;
+    width: 200px;
+    border: 2px solid  rgb(241, 0, 32) ;
+    margin-left: 10px;
+}
+#contact form button {
+    padding: 2px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: rgb(241, 0, 32);
+    font-weight: bolder ;
+    border: 1px solid ;
+    font-size: 20px;
+    transition: 0.5s;
+}
+#contact form button:hover{
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+/* Contact End */
+/* Footer Start */
+footer{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    flex-direction: column;
+    
+}
+footer h3{
+    color: white;
+}
+footer h4{
+}
+footer .container{
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+}
+footer .card{
+    margin: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+footer .card:hover{
+    box-shadow: 0px 0px 20px white;
+    transition: 0.5s;cursor: pointer;
+}
+footer .card h4{
+    font-size: 20px;
+}
+footer h5{
+    margin: 5px;
+    color: white;
+    font-size: 20px;
+}
+footer .card .sosmed a i{
+    color:white;
+    font-size:20px;
+    margin: 2px;
+}
